@@ -8,6 +8,7 @@ local Ss = Library:Tab("Stats","rbxassetid://7733674239") --7734034378 --7733674
 local RaceV4 = Library:Tab("RaceV4","rbxassetid://11162889532")
 local P = Library:Tab("Combat","rbxassetid://7251993295")
 local R = Library:Tab("Raid","rbxassetid://11155986081")
+local ESP = Library:Tab("ESP","rbxassetid://11446920523")
 local T = Library:Tab("Teleport","rbxassetid://11155851001")
 local S = Library:Tab("Shop","rbxassetid://6031265976")
 local D = Library:Tab("Devil Fruit","rbxassetid://7044233235")
@@ -14189,31 +14190,31 @@ Misc:Toggle("Remove Fog",RemoveFog,function(value)
     game.Players.LocalPlayer.Character.Animate.Disabled = true 
 end)
 
-Misc:Seperator("ESP MENU")
+ESP:Seperator("ESP")
     
-    Misc:Toggle("ESP Player",false,function(a)
+    ESP:Toggle("ESP Player",false,function(a)
         ESPPlayer = a
 	UpdatePlayerChams()
     end)
     
-    Misc:Toggle("ESP Chest",false,function(a)
+    ESP:Toggle("ESP Chest",false,function(a)
         ChestESP = a
 	UpdateChestChams() 
     end)
     
-    Misc:Toggle("ESP Fruit",false,function(a)
+    ESP:Toggle("ESP Fruit",false,function(a)
         DevilFruitESP = a
         while DevilFruitESP do wait()
             UpdateDevilChams() 
         end
     end)
     
-    Misc:Toggle("ESP Real Fruit",RealFruitESP,function(a)
+    ESP:Toggle("ESP Real Fruit",RealFruitESP,function(a)
         RealFruitESP = a
 	UpdateRealFruitChams() 
     end)
     
-    Misc:Toggle("ESP Flower",false,function(a)
+    ESP:Toggle("ESP Flower",false,function(a)
         FlowerESP = a
 	UpdateFlowerChams() 
     end)
@@ -14236,40 +14237,40 @@ Misc:Seperator("ESP MENU")
 		    end
 	    end
     end)
-Misc:Toggle("ESP Island",IslandESP,function(value)
+ESP:Toggle("ESP Island",IslandESP,function(value)
         IslandESP = value
         while IslandESP do wait()
             UpdateIslandESP() 
         end
     end)
-    Misc:Toggle("Esp Npc", false, function(nec)
+    ESP:Toggle("Esp Npc", false, function(nec)
     NpcESP = nec
 end)
 
-Misc:Toggle("Esp Sea Beast", false, function(nec)
+ESP:Toggle("Esp Sea Beast", false, function(nec)
     SeaESP = nec
 end)
 
 
-Misc:Toggle("Esp Mob", false, function(nec)
+ESP:Toggle("Esp Mob", false, function(nec)
     MobESP = nec
 end)
 
-Misc:Toggle("Esp Mystic Island", false, function(value)
+ESP:Toggle("Esp Mirage Island", false, function(value)
     MirageIslandESP = value
         while MirageIslandESP do wait()
             UpdateIslandMirageESP()
         end
     end)
 
-Misc:Toggle("Esp Advanced Fruit Dealer", false, function(value)
+ESP:Toggle("Esp Advanced Fruit Dealer", false, function(value)
     AfdESP = value
         while AfdESP do wait()
             UpdateAfdESP()
         end
     end)
     
-Misc:Toggle("Esp Gear [Beta]", false, function(value)
+ESP:Toggle("Esp Gear [Beta]", false, function(value)
     GearESP = value
         while GearESP do wait()
             UpdateGeaESP() 
