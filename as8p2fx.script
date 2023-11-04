@@ -8,7 +8,7 @@ local Ss = Library:Tab("Stats","rbxassetid://7733674239") --7734034378 --7733674
 local RaceV4 = Library:Tab("RaceV4","rbxassetid://11162889532")
 local P = Library:Tab("Combat","rbxassetid://7251993295")
 local R = Library:Tab("Raid","rbxassetid://11155986081")
-local ESP = Library:Tab("ESP","rbxassetid://11446920523")
+local ESP = Library:Tab("ESP","rbxassetid://7733765307")
 local T = Library:Tab("Teleport","rbxassetid://11155851001")
 local S = Library:Tab("Shop","rbxassetid://6031265976")
 local D = Library:Tab("Devil Fruit","rbxassetid://7044233235")
@@ -630,7 +630,7 @@ if game.PlaceId == 2753915549 then
                 CFrameQuest = CFrame.new(-16547.748046875, 61.13533401489258, -173.41360473632812)
                 CFrameMon = CFrame.new(-16901.26171875, 84.06756591796875, -192.88906860351562)
             elseif MyLevel == 2500 or MyLevel <= 2524 then
-                Mon = "Sun-kissed Warrior"
+                Mon = "Sun-kissed Warriors"
                 LevelQuest = 1
                 NameQuest = "TikiQuest2"
                 NameMon = "Sun-kissed Warriors"
